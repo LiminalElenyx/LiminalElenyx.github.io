@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav class="site-nav" aria-label="Primary">
+    <header class="site-header">
+        <h1 class="sticky-name">My Projects</h1>
+
+        <p class="tagline">Selected Projects pulled live from my GitHub profile.</p>
+        <nav class="site-nav sticky-nav" aria-label="Primary">
                  <a href="index.html">About</a>
                 <a href="resume.html">Resume</a>
                 <a href="projects.html">Projects</a>
                 </nav>
     </header>
 
-    <main>
-        <section class="projects">
-            <article class="projects">
-                <h2><a href="https://github.com/LiminalElenyx/TheWatchdog.git"
+    <main class="container cards">
+        <section class="card">
+            
+                <h2>GitHub Repositories</h2>
+                <div id="repo-list">
+                    Loading...</div>
+         <!--   <article class="projects">
+             <h2><a href="https://github.com/LiminalElenyx/TheWatchdog.git"
      target="_blank"
      rel="noopener">The Watchdog</a></h2>
                 <p>The Watchdog is a locally inspired investigative blog site built with HTML, CSS, and foundational JavaScript. The project demonstrates responsive design principles, clean code structure, and a cohesive visual theme modeled after small-town journalism. It also incorporates basic JavaScript functions to enhance interactivity and user experience, serving as an early example of dynamic front-end development.</p>
@@ -42,10 +48,10 @@
                 <h2><a href="https://liminalelenyx.github.io" target="_blank"
      rel="noopener">Resume Website</a></h2>
                 <p>A personal portfolio and resume built with HTML and CSS, hosted on GitHub pages. Demonstrates responsive design, semantic structure, and experience with version control using Git.</p>
-            </article>
-            
-        </section>
+                    </article>-->
+        
+        </section> 
     </main>
-    
+    <script src="./projects.js" defer></script>
 </body>
 </html>
